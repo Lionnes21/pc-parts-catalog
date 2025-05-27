@@ -8,11 +8,11 @@ GitHub: https://github.com/your-username/pc-parts-catalog
        'cd pc-parts-catalog' <br>
        'code .'
        
-2. Install PHP Dependencies (If not already installed) <br>
+2. Install PHP Dependencies <br>
     Install backend dependencies using Composer: <br>
         'composer install'
    
-3. Install Front-End Dependencies (If not already installed) <br>
+3. Install Front-End Dependencies <br>
     Install Node.js packages for TailwindCSS and Vite: <br>
         'npm install'
    
@@ -44,7 +44,7 @@ GitHub: https://github.com/your-username/pc-parts-catalog
     Compile styles and JS using Vite: <br>
        'npm run dev'
    
-9. Start Development Server <br>
+9. Start Development Server <br> (ADD NEW TERMINAL)
      Start Laravel’s built-in server:<br>
         'php artisan serve'
 

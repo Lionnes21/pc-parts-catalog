@@ -5,7 +5,7 @@ Installation
 Follow these steps to set up and run the project locally:
 1. Clone the Repository
 Clone the project from GitHub to your local machine:
-git clone https://github.com/Lionnes21/pc-parts-catalog.git
+git clone https://github.com/Lionnes21/pc-parts-catalog.git <br>
 cd pc-parts-catalog
 
 Replace your-username with your actual GitHub username.

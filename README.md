@@ -1,5 +1,5 @@
 ## Repository
-GitHub: https://github.com/your-username/pc-parts-catalog
+GitHub: https://github.com/Lionnes21/pc-parts-catalog
 ## Installation Guide (Go to terminal with directory 'C:\xampp\htdocs')
 
 1. Clone the Repository

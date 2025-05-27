@@ -27,7 +27,16 @@
         </div>
         <div class="mb-4">
             <label for="category" class="block text-sm font-medium">Category</label>
-            <input type="text" name="category" id="category" class="w-full p-2 border rounded @error('category') border-red-500 @enderror" value="{{ old('category') }}">
+            <select name="category" id="category" class="w-full p-2 border rounded @error('category') border-red-500 @enderror">
+                <option value="" {{ old('category') == '' ? 'selected' : '' }} disabled>Select a category</option>
+                <option value="CPU" {{ old('category') == 'CPU' ? 'selected' : '' }}>CPU</option>
+                <option value="GPU" {{ old('category') == 'GPU' ? 'selected' : '' }}>GPU</option>
+                <option value="RAM" {{ old('category') == 'RAM' ? 'selected' : '' }}>RAM</option>
+                <option value="Motherboard" {{ old('category') == 'Motherboard' ? 'selected' : '' }}>Motherboard</option>
+                <option value="Storage" {{ old('category') == 'Storage' ? 'selected' : '' }}>Storage</option>
+                <option value="Power Supply" {{ old('category') == 'Power Supply' ? 'selected' : '' }}>Power Supply</option>
+                <option value="Case" {{ old('category') == 'Case' ? 'selected' : '' }}>Case</option>
+            </select>
             @error('category')
                 <p class="text-red-500 text-sm">{{ $message }}</p>
             @enderror

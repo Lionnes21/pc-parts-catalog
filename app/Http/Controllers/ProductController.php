@@ -7,27 +7,24 @@ use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
-    // Display all products
     public function index()
     {
         $products = Product::all();
         return view('products.index', compact('products'));
     }
 
-    // Show form to create a new product
     public function create()
     {
         return view('products.create');
     }
 
-    // Store a new product
     public function store(Request $request)
     {
         $request->validate([
             'name' => 'required|string|max:255',
             'description' => 'nullable|string',
             'price' => 'required|numeric|min:0',
-            'category' => 'required|string|max:255',
+            'category' => 'required|in:CPU,GPU,RAM,Motherboard,Storage,Power Supply,Case', // Validate category
             'stock' => 'required|integer|min:0',
         ]);
 
@@ -35,20 +32,18 @@ class ProductController extends Controller
         return redirect()->route('products.index')->with('success', 'Product created successfully.');
     }
 
-    // Show form to edit a product
     public function edit(Product $product)
     {
         return view('products.edit', compact('product'));
     }
 
-    // Update a product
     public function update(Request $request, Product $product)
     {
         $request->validate([
             'name' => 'required|string|max:255',
             'description' => 'nullable|string',
             'price' => 'required|numeric|min:0',
-            'category' => 'required|string|max:255',
+            'category' => 'required|in:CPU,GPU,RAM,Motherboard,Storage,Power Supply,Case', // Validate category
             'stock' => 'required|integer|min:0',
         ]);
 
@@ -56,7 +51,6 @@ class ProductController extends Controller
         return redirect()->route('products.index')->with('success', 'Product updated successfully.');
     }
 
-    // Delete a product
     public function destroy(Product $product)
     {
         $product->delete();

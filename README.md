@@ -28,7 +28,7 @@ GitHub: https://github.com/Lionnes21/pc-parts-catalog
        DB_USERNAME=root  
        DB_PASSWORD=
 
-5. Create the Database <br>
+5. Create the Database (RUN XAMPP - Apache & MySQL) <br> 
     Use your SQL client or run this query: <br>
         'CREATE DATABASE pc_parts_catalog;'
 

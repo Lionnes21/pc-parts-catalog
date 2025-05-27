@@ -1,17 +1,18 @@
 ## Repository
 GitHub: https://github.com/your-username/pc-parts-catalog
-## Installation Guide
+## Installation Guide (Go to terminal with directory 'C:\xampp\htdocs')
 
 1. Clone the Repository
     Download the project to your local machine: <br>
        'git clone https://github.com/Lionnes21/pc-parts-catalog.git' <br>
-       'cd pc-parts-catalog'
-   
+       'cd pc-parts-catalog' <br>
+       'code .'
+       
 2. Install PHP Dependencies (If not already installed) <br>
     Install backend dependencies using Composer: <br>
         'composer install'
    
-3. Install Front-End Dependencies <br>
+3. Install Front-End Dependencies (If not already installed) <br>
     Install Node.js packages for TailwindCSS and Vite: <br>
         'npm install'
    
@@ -43,7 +44,7 @@ GitHub: https://github.com/your-username/pc-parts-catalog
     Compile styles and JS using Vite: <br>
        'npm run dev'
    
-10. Start Development Server <br>
+9. Start Development Server <br>
      Start Laravel’s built-in server:<br>
         'php artisan serve'
 
